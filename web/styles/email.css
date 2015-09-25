@@ -1,0 +1,272 @@
+
+html {
+  background-image: url('../images/bats.gif');
+  background-repeat: repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+body {
+  width: 800px;
+  background-color: white;
+  border: 2px solid black;
+  /* -webkit-box-shadow: 5px 5px 5px 5px red; */
+  box-shadow: 0 9px 20px 9px black;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  color: orange;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  color: green;
+}
+
+li {
+  margin-bottom: .3em;
+}
+
+header img {
+  float: left;
+  margin-right: 2em;
+}
+
+header {
+  background: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+  border-bottom: 2px solid black;
+  padding: 1.2em .9em 1.2em .9em;
+}
+
+aside {
+  float: left;
+  width: 160px;
+}
+
+aside ul, 
+aside li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+aside li {
+  margin: 0 0 .2em 1em;
+}
+
+aside li:first-child {
+  margin-top: 1.2em;
+}
+
+aside li a {
+
+  background: orange;
+  border: 2px solid black;
+  color: black;
+  display: block;
+  line-height: 2em;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: .25em;
+  padding-left: .75em;
+  padding-right: .2em;
+  text-decoration: none;
+
+}
+
+aside li a:last-child {
+  margin-bottom: 0;
+}
+
+aside li a:hover {
+  color: black;
+}
+/* microfix hack */
+.cf::before,
+.cf::after {
+  content: "";
+  display: table;
+}
+
+.cf ::after {
+  clear: both;
+}
+
+nav  {
+  background: black;
+  height: 2em;
+}
+
+nav ul,
+nav li {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+nav ul {
+  background: black;
+  height: 2em;
+  width: 100%;
+}
+
+nav li {
+  position: relative;
+  text-align: center;
+  width: 20%;
+
+}
+
+nav li a {
+  color: white;
+  display: block;
+  line-height: 2em;
+  text-decoration: none;
+}
+
+
+.topmenu li:hover > a {
+  background: grey;
+  color: black;
+  position: relative;
+}
+
+nav li a.current {
+  color: orange;
+}
+
+ul.submenu {
+  background: black;
+  float: none;
+  height: auto;
+  left: -9000em;
+  position: absolute;
+  top: 2em;
+  width: 100%;
+}
+
+ul.submenu li {
+  float: none;
+  text-align: center;
+  width: 100%;
+
+}
+
+ul.submenu li a {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.topmenu li:hover ul {
+  left: 0;
+}
+
+ul.submenu li a:hover {
+  background: grey;
+  color: black;
+}
+
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 0;
+}
+
+header h1 {
+  color: black;
+  font-style: normal; 
+  margin-bottom: 0;
+  margin-top: 0;
+  /* text-shadow: 2px 2px black; */
+  padding: 0 0 0 3em;
+}
+
+header h2 {
+  margin-top: .2em;
+}
+
+#first-heading {
+  margin-bottom: .2em;
+}
+
+main p {
+  margin-bottom: .5em;
+}
+
+section {
+  float: right;
+  margin: .8em .9em 1.0em;
+  width: 600px;
+}
+
+section h1 {
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+label {
+  text-align: right;
+  width: 5em;
+  float: left;
+}
+
+input[type=text],
+input[type=email] {
+  border: 1px solid black;
+  margin-left: .5em;
+  margin-bottom: .2em;
+  width: 20em;
+  
+}
+
+input:focus {
+  background: lightgrey;
+  border: 3px solid black;
+}
+
+input[type=submit] {
+  background: orange;
+  border: 1px solid black;
+  box-shadow: 2px 2px black;
+  padding: .2em 1em;
+  margin-left: 5.5em;
+}
+
+form br {
+  clear: both;
+}
+
+footer {
+  background: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+  border-top: 2px solid black;
+  clear: both;
+  padding: .9em;
+}
+footer p {
+  font-size: 90%;
+  text-align: center;
+
+}

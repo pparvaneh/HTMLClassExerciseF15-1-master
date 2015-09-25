@@ -1,0 +1,312 @@
+html {
+  background-image: url('../images/bats.gif');
+  background-repeat: repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+body {
+  max-width: 960px;
+  width: 95%;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 0 9px 20px 9px black;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: orange;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  color: green;
+}
+
+li {
+  margin-bottom: .3em;
+}
+
+header img {
+  float: left;
+  margin-right: 2em;
+  min-width: 40px;
+  max-width: 85px;
+  width: 10.6%;
+}
+
+header {
+  background: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+  border-bottom: 2px solid black;
+  padding: 1.2em .9em 1.2em .9em;
+}
+
+aside {
+  float: left;
+  width: 20%;
+}
+
+aside ul, 
+aside li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+aside li {
+  margin: 0 0 .2em 1em;
+}
+
+aside li:first-child {
+  margin-top: 1.2em;
+}
+
+aside li a {
+  background: orange;
+  border: 2px solid black;
+  color: black;
+  display: block;
+  line-height: 2em;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: .25em;
+  padding-left: .75em;
+  padding-right: .2em;
+  text-decoration: none;
+}
+
+aside li a:last-child {
+  margin-bottom: 0;
+}
+
+aside li a:hover {
+  color: black;
+}
+/* microfix hack */
+.cf::before,
+.cf::after {
+  content: "";
+  display: table;
+}
+
+.cf ::after {
+  clear: both;
+}
+
+nav  {
+  background: black;
+  height: 2em;
+}
+
+nav ul,
+nav li {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  background: black;
+  height: 2em;
+  width: 100%;
+}
+
+nav li {
+  position: relative;
+  text-align: center;
+  width: 20%;
+}
+
+nav li a {
+  color: white;
+  display: block;
+  line-height: 2em;
+  text-decoration: none;
+}
+
+.topmenu li:hover > a {
+  background: grey;
+  color: black;
+  position: relative;
+}
+
+nav li a.current {
+  color: orange;
+}
+
+nav #hamburger {
+  display: none;
+}
+
+section {
+  box-sizing: border-box;
+  float: right;
+  padding: .8em 1.9em 1.0em;
+  width: 80%;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 0;
+}
+
+header h1 {
+  color: black;
+  font-style: normal; 
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0 0 0 3em;
+}
+
+header h2 {
+  margin-top: .2em;
+}
+
+#first-heading::first-letter {
+  font-size: 200%;
+}
+
+#first-heading {
+  margin-bottom: .2em;
+}
+
+main p {
+  margin-bottom: .5em;
+}
+
+section h3 {
+  margin-bottom: .2em;
+}
+
+section img {
+  max-width: 150px;
+  width: 25%;
+}
+
+footer {
+  background: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+  border-top: 2px solid black;
+  clear: both;
+  padding: .9em;
+}
+
+footer p {
+  font-size: 90%;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+
+  html {
+    background-image: none;
+  }
+  body {
+    box-shadow: none;
+    font-size: 95%;
+  } 
+}
+
+@media screen and (max-width: 767px) {
+
+  ul.topmenu {
+    background: black;
+    clear: both;
+    display: block;
+    height: auto;
+    left: 1em; /*-9000em */
+    position: absolute; 
+    transform: translate(-500px, 2em);
+    transition: transform 0.3s ease;
+    width: 14em;
+  }
+
+  .topmenu li {
+    clear: both;
+    display: block;
+    line-height: 2em;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    width: 90%;
+  }
+
+  .topmenu li a {
+    clear: both;
+    display: block;
+    line-height: 2em;
+    min-height: 48px;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 1em;;
+    width: 100%;
+  }
+
+  nav #hamburger {
+    display: block;
+    float: right;
+    padding-right: 2em;
+    text-decoration: none;
+    color: white;
+    line-height: 2em;
+  }
+
+  #atopmenu.open {
+    -webkit-transform: translate(0, 0);
+    position: absolute;
+    transform: translate(0,0);
+  }
+
+  #hamburger:hover, 
+  #hamburger:focus {
+    color: white;
+  }
+
+  aside {
+    clear: both;
+    float: none;
+    width: 50%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  aside ul {
+    margin: 0 auto;
+  }
+
+  section {
+    box-sizing: border-box;
+    padding: .8em 1.9em 1.0em;
+    width: 100%;
+  }
+} 
+
+@media screen and (max-width: 479px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+  header h2 {
+    font-size: 1.3em;
+  }
+
+  section h1 {
+    font-size: 1.5em;
+  }
+} 
